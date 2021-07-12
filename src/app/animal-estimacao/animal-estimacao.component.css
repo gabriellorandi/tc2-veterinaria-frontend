@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: 90vh;
+  }
+  #cliente .container #cliente-row #cliente-column #menu-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #575697;
+  }
+  #cliente .container #cliente-row #cliente-column #cliente-box #cliente-form {
+    margin-top: 85px;
+    padding: 20px;
+  }
+  #cliente .container #cliente-row #cliente-column #cliente-box #cliente-form #register-link {
+    margin-top: -85px;
+  }
+  .text-info {
+    color: #e6e6e6!important;
+}

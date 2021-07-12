@@ -1,0 +1,48 @@
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <div class="container">
+            <div id="menu-row" class="row justify-content-center align-items-center">
+                <div id="menu-column" class="col-md-6">
+                    <div id="menu-box" class="bg-dark">
+                        <h3 i18n class="text-center text-info">Clientes</h3>
+                        <table class="table table-dark">
+                            <thead>
+                              <tr>
+                                <th scope="col">CPF</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Sexo</th>
+                                <th scope="col">Data de nascimento</th>
+                                <th scope="col">Ação</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let c of listaClientes">
+                                    <td>{{c.cpf}}</td>
+                                    <td>{{c.nome}}</td>
+                                    <td>{{c.sexo}}</td>
+                                    <td>{{c.dataNascimento | date:'shortDate'}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-md" (click)="listaAnimal(c._id)"><span i18n>Listar Pets</span></button>                                                      
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-md" (click)="deletarCliente(c._id)"><span i18n>Deletar</span></button>                                                      
+                                    </td>
+                                </tr>
+                            </tbody>
+                          </table>
+                          <div class="form-group">                            
+                            <button type="button" class="btn btn-info btn-md" (click)="cadastrarCliente()"><span i18n>Cadastrar Cliente</span></button>                                                      
+                          </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
