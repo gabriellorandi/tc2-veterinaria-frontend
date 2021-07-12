@@ -16,6 +16,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "pt-BR",
+        "locales": {
+          "en-US": "src/locale/messages.en-US.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -25,6 +31,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": true,
             "aot": true,
             "assets": [
               "src/favicon.ico",
@@ -39,6 +46,9 @@
             ]
           },
           "configurations": {
+            "en-US": {
+              "localize": ["en-US"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -74,6 +84,9 @@
             "browserTarget": "tc2-veterinaria-frontend:build"
           },
           "configurations": {
+            "en-US": {
+              "browserTarget": "tc2-veterinaria-frontend:build:en-US"
+            },
             "production": {
               "browserTarget": "tc2-veterinaria-frontend:build:production"
             }

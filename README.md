@@ -1,6 +1,6 @@
 ## EASYPET
 
-um sistema de web para gerenciamento de uma clinica veterinária, onde será possível cadastrar o animal de estimação e seu dono e gerenciar consultas relacionadas a eles.
+Um sistema de web para gerenciamento de uma clinica veterinária, onde será possível cadastrar o animal de estimação e seu dono.
 
 ## Tecnológias utilizadas
 
@@ -14,8 +14,18 @@ um sistema de web para gerenciamento de uma clinica veterinária, onde será pos
  ```shell
  sudo apt-get install nodejs npm
  sudo npm install -g @angular/cli@11.2.6
- ng serve
  ```
+
+## Iniciar Aplicação
+
+```shell
+ng serve
+```
+### Em inglês (TRADUÇÂO)
+
+```shell
+ng serve --configuration=en-US
+```
 
 ## Licença
 
